@@ -18,7 +18,7 @@ if choice:
     is_correct = choice in answers
     choice_row = df[df['name'] == choice]
     if is_correct:
-        st.success(f"Yay! You did it! {choice} is {choice_row.age} years old and {choice_row.height}!")
+        st.success(f"Yay! You did it! {choice} is {int(choice_row.age.values[0])} years old and {str(choice_row.height.values[0])}!")
         
     else:
-        st.error(f"Nope. {choice} is {choice_row.age} years old and {choice_row.height}... Try again.")
+        st.error(f"Nope. {int(choice_row.age.values[0])} years old and {str(choice_row.height.values[0])}... Try again.")
