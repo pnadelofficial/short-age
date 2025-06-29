@@ -21,4 +21,4 @@ if choice:
         st.success(f"Yay! You did it! {choice} is {int(choice_row.age.values[0])} years old and {str(choice_row.height.values[0])}!")
         
     else:
-        st.error(f"Nope. {int(choice_row.age.values[0])} years old and {str(choice_row.height.values[0])}... Try again.")
+        st.error(f"Nope. {choice} is {int(choice_row.age.values[0])} years old and {str(choice_row.height.values[0])}... Try again.")
