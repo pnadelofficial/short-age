@@ -3,7 +3,7 @@ import streamlit as st
 st.title("Short Age")
 st.subheader("A Height Game")
 
-with st.expander(expanded=True):
+with st.expander(label="instructions", expanded=True):
     st.markdown("""
 The object of this game is to find a celebrity who has the same age as their height. For example, if you guess an actor is 55 and 5ft 5 then you would win. Otherwise... well... you're a loser. Select a celeb below to get started. 
     """)
